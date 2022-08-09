@@ -12,15 +12,15 @@ namespace App5
     {
         static void Main(string[] args)
         {
-            const int n = 10000;
-            int[] array = new int[n]; //{2,3,2,4};
-            Random rand = new Random();
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i] = rand.Next(1, 10);
-                Console.Write("{0} ", array[i]);
-            }
-            Console.WriteLine();
+            const int n = 4;
+            int[] array = new int[n] {2,3,2,4};
+            //Random rand = new Random();
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    array[i] = rand.Next(1, 10);
+            //    Console.Write("{0} ", array[i]);
+            //}
+            //Console.WriteLine();
             Stopwatch stopWatch1 = new Stopwatch();
             stopWatch1.Start();
             Console.WriteLine("Метод List");
